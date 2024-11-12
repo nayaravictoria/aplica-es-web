@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="pag">
+    <h1> <output id="titulo"> Super Mário Bros </output></h1>
+    <form name="festas">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="nome@provedor.com">
+
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data">
+
+        <label for="hora">Horário</label>
+        <input type="radio" name="hora" id="08h" value="08h-12h" checked>
+        <label for="08h">08h-12h</label>
+        <input type="radio" name="hora" id="14h" value="14h-18h">
+        <label for="14h">14h-18h</label>
+        <input type="radio" name="hora" id="20h" value="20h-0h">
+        <label for="20h">20h-00h</label>
+
+        <label for="tema"> Tema </label>
+        <select name="tema" id="tema">
+            <option value="mario">Super Mário Bros</option>
+            <option value="Masha">Masha e o Urso</option>
+            <option value="PjMasks">PjMasks</option>
+        </select>
+
+        <label for="opcionais">Opcionais</label>
+        <input type="checkbox" name="guloseimas" id="guloseimas" onchange="calc(350,this.checked)"> Mesa de Guloseimas
+
+        <input type="checkbox" name="personagem" id="personagem" onchange="calc(300,this.checked)"> Personagem Vivo
+
+        <input type="checkbox" name="atracoes" id="atracoes" onchange="calc(250,this.checked)"> Atrações
+
+        <input type="checkbox" name="maquiagem" id="maquiagem" onchange="calc(150,this.checked)"> Maquiagem Infantil
+
+        <input type="checkbox" name="brindes" id="brindes" onchange="calc(100,this.checked)"> Brindes
+
+        <p id="saida">
+            R$ <output id="total"> 0 </output>
+        </p>
+        <button type="reset">Limpar </button>
+        <button type="submit">Enviar </button>
+    </form>
+</section>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

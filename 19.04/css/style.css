@@ -1,0 +1,41 @@
+form{
+    width: 60%;
+}
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+}
+
+input, select{
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+}
+
+input[type='radio'], input[type='checkbox']{
+    width: 0.8em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+
+.pag{
+    width: 75%;
+    background-color: white;
+    border-radius: 2em;
+    padding: 5em;
+    padding-top: 1em;
+    margin: auto;
+}
+h1{
+    font-family: "arial black";
+    color: dodgerblue;
+    text-align: center;
+    font-size: 2.5em;
+}
+#saida{
+    font-family: "arial black";
+    font-size: 2.5em;
+}
